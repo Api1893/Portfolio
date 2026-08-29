@@ -1,0 +1,87 @@
+/* --- Obere Sektion (Split-Screen) --- */
+.hero-section {
+  display: flex;           /* Teilt den Bereich nebeneinander auf */
+  min-height: 80vh;        /* Nimmt 80% der Bildschirmhöhe ein */
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;                 /* Nimmt genau 50% der Breite ein */
+  background-color: #171b26; /* Dunkles Blau-Grau */
+  color: #ffffff;
+  padding: 10%;            /* Abstand nach innen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Zentriert den Text vertikal */
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: #9ba1a6;          /* Grauer Untertitel */
+  font-size: 2rem;
+}
+
+.hero-text p {
+  color: #9ba1a6;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+.cta-button {
+  background-color: #c2d5e6; /* Hellblauer Button */
+  color: #171b26;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.8;
+}
+
+.hero-image {
+  flex: 1;                 /* Nimmt die anderen 50% der Breite ein */
+  background-color: #d1d5db; /* Helles Grau als Bild-Hintergrund */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;   /* Setzt das Bild an den unteren Rand */
+  overflow: hidden;        /* Verhindert, dass das Bild übersteht */
+}
+
+.hero-image img {
+  max-height: 100%;
+  object-fit: cover;       /* Passt das Bild sauber in den Container ein */
+}
+
+/* --- Untere Sektion (Über mich / Scrollbereich) --- */
+.about-section {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 8% 10%;
+  min-height: 60vh;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+}
