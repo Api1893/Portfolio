@@ -1,21 +1,21 @@
-/* --- Obere Sektion (Split-Screen) --- */
-.hero-section {
-  display: flex;           /* Teilt den Bereich nebeneinander auf */
-  min-height: 80vh;        /* Nimmt 80% der Bildschirmhöhe ein */
+/* ------------------ Titel section -------------- */
+.start-section {
+  display: flex;       
+  min-height: 80vh;      
   width: 100%;
 }
 
-.hero-text {
-  flex: 1;                 /* Nimmt genau 50% der Breite ein */
-  background-color: #171b26; /* Dunkles Blau-Grau */
+.start-text {
+  flex: 1;               
+  background-color: #171b26; 
   color: #ffffff;
-  padding: 10%;            /* Abstand nach innen */
+  padding: 10%;     
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Zentriert den Text vertikal */
+  justify-content: center;
 }
 
-.hero-text h1 {
+.start-text h1 {
   font-size: 2.8rem;
   font-weight: 300;
   margin-bottom: 1.5rem;
@@ -23,11 +23,11 @@
 }
 
 .subtitle {
-  color: #9ba1a6;          /* Grauer Untertitel */
+  color: #9ba1a6;   
   font-size: 2rem;
 }
 
-.hero-text p {
+.start-text p {
   color: #9ba1a6;
   line-height: 1.6;
   margin-bottom: 2.5rem;
@@ -35,8 +35,35 @@
   max-width: 600px;
 }
 
-.cta-button {
-  background-color: #c2d5e6; /* Hellblauer Button */
+/* ------------------ Text section -------------- */
+.my-way {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.mobile-development {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.summary-text {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+/* ------------------ More button section -------------- */
+
+.more-button {
+  background-color: #c2d5e6;
   color: #171b26;
   border: none;
   padding: 12px 28px;
@@ -48,40 +75,79 @@
   transition: opacity 0.3s ease;
 }
 
-.cta-button:hover {
+.more-button:hover {
   opacity: 0.8;
 }
 
-.hero-image {
-  flex: 1;                 /* Nimmt die anderen 50% der Breite ein */
-  background-color: #d1d5db; /* Helles Grau als Bild-Hintergrund */
+/* ------------------ Image/picture section -------------- */
+.start-image {
+  flex: 1;
+  background-color: #d1d5db; 
+  position: relative;
+  width: 100%;
+  overflow: hidden; 
+}
+
+.start-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ------------------ Property section -------------- */
+/* --- cards-wrapper --- */
+.cards-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;   /* Setzt das Bild an den unteren Rand */
-  overflow: hidden;        /* Verhindert, dass das Bild übersteht */
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 32px;
+  width: 100%;
 }
 
-.hero-image img {
-  max-height: 100%;
-  object-fit: cover;       /* Passt das Bild sauber in den Container ein */
+/* --- Card style --- */
+.card-box {
+  flex: 1;
+  min-width: 280px;
+  background-color: #1e2430;
+  border: 1px solid #2e3646;
+  border-radius: 12px;          
+  padding: 34px;
+  margin: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* --- Untere Sektion (Über mich / Scrollbereich) --- */
-.about-section {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 8% 10%;
-  min-height: 60vh;
+/* Hover effect */
+.card-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.about-section h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin-bottom: 1.5rem;
+.card-title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
-.about-section p {
+.card-text {
+  color: #9ba1a6;
   font-size: 1.2rem;
   line-height: 1.6;
-  max-width: 800px;
+  margin-bottom: 24px;
+}
+
+.card-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #2e3646;
+  color: #c2d5e6;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
 }
