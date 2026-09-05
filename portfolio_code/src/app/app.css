@@ -6,10 +6,11 @@
 }
 
 .start-text {
-  flex: 1;               
+  flex: 0 0 40%;
+  max-width: 500px;
   background-color: #171b26; 
   color: #ffffff;
-  padding: 10%;     
+  padding: 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +62,6 @@
 }
 
 /* ------------------ More button section -------------- */
-
 .more-button {
   background-color: #c2d5e6;
   color: #171b26;
@@ -95,7 +95,23 @@
   object-position: center;
 }
 
-/* ------------------ Property section -------------- */
+/* ------------------ Icons section -------------- */
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.icon-accent {
+  color: #c2d5e6;
+  font-size: 10rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* ------------------ Cards section -------------- */
 /* --- cards-wrapper --- */
 .cards-wrapper {
   display: flex;
@@ -122,6 +138,8 @@
 .card-box:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+  transition-delay: 0.1s;
 }
 
 .card-title {
@@ -129,6 +147,10 @@
   font-size: 1.8rem;
   margin-top: 0;
   margin-bottom: 16px;
+}
+
+.cards-wrapper h3 {
+  text-align: center;
 }
 
 .card-text {
@@ -150,4 +172,41 @@
   padding: 6px 14px;
   border-radius: 6px;
   font-size: 0.9rem;
+}
+
+.tag:hover {
+  background-color: #c2d5e6;
+  color: #171b26;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(194, 213, 230, 0.2);
+}
+
+/* ------------------ Footer section -------------- */
+.footer {
+  background-color: #1e2430;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.footer-link {
+  color: #9ba1a6;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.footer-link:not(:last-child)::after {
+  content: "|";
+  color: #9ba1a6;            /* Farbe des Trennstrichs */
+  margin-left: 16px;         /* Abstand zum Strich nach links */
 }
