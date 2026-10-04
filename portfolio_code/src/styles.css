@@ -6,3 +6,57 @@ html, body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background-color: #495877;
 }
+
+/* ------------------ Shared card & tag styles (home + experience) -------------- */
+/* --- Card style --- */
+.card-box {
+  flex: 1;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  min-width: 280px;
+  background-color: #1e2430;
+  border: 1px solid #2e3646;
+  border-radius: 12px;          
+  padding: 34px;
+  margin: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.card-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.card-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #2e3646;
+  color: #c2d5e6;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #c2d5e6;
+  color: #171b26;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(194, 213, 230, 0.2);
+}
+
+@media (max-width: 768px) {
+  .card-box {
+    min-width: 0;
+    margin: 16px;
+    padding: 24px;
+  }
+}

@@ -70,6 +70,8 @@
 /* Karteninhalt */
 .timeline-content {
   width: 100%;
+  min-width: 0;
+  margin: 0;
 }
 
 .timeline-date {
@@ -101,6 +103,7 @@
   align-items: center;
   background: linear-gradient(135deg, #1e2430 0%, #171b26 100%);
   padding: 24px 32px;
+  margin: 0;
   flex-wrap: wrap;
   gap: 20px;
 }
