@@ -1,3 +1,4 @@
+@if (isHomePage()) {
 <section class="start-section">
 
 <div class="start-text">
@@ -5,38 +6,36 @@
     <span class="subtitle">Informatik & Elektrotechnik</span>
   </h1>
 
-  <div class="my-way">
   <h3>Mein Weg in der Technologie ist zweigleisig.</h3>
   <p>
-    Nach meiner Ausbildung zum Elektroniker für Geräte und Systeme mit Vertiefung im Audio Bereich
+    Nach meiner Ausbildung zum Elektroniker für Geräte und Systeme mit Vertiefung im Audiobereich
     habe ich meine Praxiserfahrung direkt als Facharbeiter in derselben Branche ausgebaut.
     Während ich mein Fachabitur nachholte, blieb ich der Praxis treu und arbeitete bei einem Hersteller
     für Gegensprechanlagen am selben Ort, an dem ich auch mein Studium begann. Auch während meines aktuellen
     Informatikstudiums zog es mich immer wieder zur Hardware. In der Luftfahrttechnik war ich in den Semesterferien
-    für die Prüfung, Fehleranalyse und Reparatur komplexer Leiterplatinen zuständig. Diese jahrelange,
-    handfeste Praxiserfahrung bedeutet für mich ganz klar, Elektronik und Hardware Architekturen sind kein theoretisches Konzept,
+    für die Prüfung, Fehleranalyse und Reparatur komplexer Leiterplatten zuständig. Diese jahrelange,
+    handfeste Praxiserfahrung bedeutet für mich ganz klar, Elektronik und Hardware-Architekturen sind kein theoretisches Konzept,
     sondern vertrautes Handwerk, das ich sicher beherrsche.
   </p>
-</div>
 
-  <h3>...zur modernen App Entwicklung</h3>
-  <p class="mobile-development">
+  <h3>...zur modernen App-Entwicklung</h3>
+  <p>
     Parallel zur Hardware schlägt mein Herz für die Softwareentwicklung. Ein zentrales Projekt, an dem ich aktuell arbeite,
-    ist eine umfassende Vermittlungsplattform, vergleichbar mit einem Business Netzwerk, jedoch speziell zugeschnitten
+    ist eine umfassende Vermittlungsplattform, vergleichbar mit einem Business-Netzwerk, jedoch speziell zugeschnitten
     auf Musiker und Bands, die sich darüber finden und vernetzen können. Dieses System entwickle ich als komplette Infrastruktur,
     die aus einer Webseite sowie nativen Apps für iOS und Android besteht, entwickelt mit den Technologien Flutter und Dart.
   </p>
 
   <h3>Das Beste aus beiden Welten</h3>
-  <p class="summary-text">
+  <p>
     Diese Kombination aus Handwerk und Studium prägt mein Profil. Ich verstehe nicht nur den Quellcode auf dem Bildschirm,
-    sondern auch die Schaltung auf der Platine. Ob die Entwicklung moderner Software Lösungen mit Flutter und Dart
+    sondern auch die Schaltung auf der Platine. Ob die Entwicklung moderner Softwarelösungen mit Flutter und Dart
     oder die hardwarenahe Programmierung von Embedded Systems, die Erfahrung aus beiden Disziplinen hilft mir,
-    Systeme ganzheitlich zu durchdringen
+    Systeme ganzheitlich zu durchdringen.
   </p>
 
   <!-- More button -->
-  <button class="more-button">Mehr erfahren</button>
+  <button class="more-button" routerLink="/experience" >Mehr erfahren</button>
 </div>
 
 <div class="start-image">
@@ -53,17 +52,17 @@
 
     <h3 class="card-title">Hardware & Elektronik</h3>
     <p class="card-text">
-      Meine Hardwarepraxis reicht von der Prüfung, Fehleranalyse und Reparatur komplexer Leiterplatinen
-      in der Luftfahrt/Avionik und Audiotechnik bis hin zur hardwarenahen Programmierung. Die Freude am Entwickeln
+      Meine Hardwarepraxis reicht von der Prüfung, Fehleranalyse und Reparatur komplexer Leiterplatten
+      in der Luftfahrt (Avionik) und Audiotechnik bis hin zur hardwarenahen Programmierung. Die Freude am Entwickeln
       eigener Schaltungen spiegelt sich auch in meinen privaten Projekten wider. Hier erstelle ich eigene
-      Audioverstärker auf Arduino Basis, die analoge Audio Signale über 3,5mm Klinke ebenso verarbeiten
-      wie kabelloses Bluetooth Streaming.
+      Audioverstärker auf Arduino-Basis, die analoge Audiosignale über 3,5-mm-Klinke ebenso verarbeiten
+      wie kabelloses Bluetooth-Streaming.
     </p>
   
     <div class="card-tags">
       <span class="tag">C</span>
       <span class="tag">Embedded</span>
-      <span class="tag">Reparatur PCB</span>
+      <span class="tag">PCB-Reparatur</span>
     </div>
   </div>
 
@@ -77,8 +76,8 @@
     <p class="card-text">
       Die theoretischen Grundlagen der allgemeinen Informatik aus meinem Studium wende ich direkt in der Praxis an.
       Mein zentrales Softwareprojekt ist eine plattformübergreifende Vermittlungsplattform für Musiker und Bands,
-      die ich als Web-App sowie als mobile App für iOS und Android mit Flutter Dart umsetze. Ergänzt wird das Projekt
-      durch mein fundiertes Wissen aus den Kernbereichen des Informatikstudiums. Von Software Architektur,
+      die ich als Web-App sowie als mobile App für iOS und Android mit Flutter und Dart umsetze. Ergänzt wird das Projekt
+      durch mein fundiertes Wissen aus den Kernbereichen des Informatikstudiums. Das reicht von Softwarearchitektur,
       Requirements Engineering und Datenbankdesign bis hin zu Algorithmen und Datenstrukturen, die ich etwa
       für die gezielte Suche und Filterung relevanter Bands und Musiker einsetze.
     </p>
@@ -90,6 +89,9 @@
     </div>
   </div>
 </div>
+}
+
+<router-outlet></router-outlet>
 
 <div class="footer">
   <a href="#" class="footer-link">AGB</a>
