@@ -1,4 +1,4 @@
-import { Component, signal, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { filter, map } from 'rxjs/operators';
@@ -12,7 +12,6 @@ import { filter, map } from 'rxjs/operators';
 })
 
 export class App {
-  protected readonly title = signal('portfolio_code');
   private router = inject(Router);
 
   // Reaktives Signal: Reagiert automatisch bei jedem Seitenwechsel
